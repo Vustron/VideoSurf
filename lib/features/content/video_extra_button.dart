@@ -1,4 +1,4 @@
-import 'package:video_surf/cores/helpers/methods.dart';
+import 'package:VideoSurf/cores/helpers/methods.dart';
 import 'package:flutter/material.dart';
 
 class VideoExtraButton extends StatelessWidget {

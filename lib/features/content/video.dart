@@ -1,6 +1,6 @@
-import 'package:video_surf/features/content/video_extra_button.dart';
-import 'package:video_surf/cores/widgets/flat_button.dart';
-import 'package:video_surf/cores/helpers/methods.dart';
+import 'package:VideoSurf/features/content/video_extra_button.dart';
+import 'package:VideoSurf/cores/widgets/flat_button.dart';
+import 'package:VideoSurf/cores/helpers/methods.dart';
 import 'package:flutter/material.dart';
 
 class Video extends StatelessWidget {

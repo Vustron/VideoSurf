@@ -1,5 +1,6 @@
-import 'package:video_surf/cores/helpers/methods.dart';
+import 'package:VideoSurf/cores/helpers/methods.dart';
 import 'package:flutter/material.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 
 class ImageButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -26,9 +27,10 @@ class ImageButton extends StatelessWidget {
               Radius.circular(12),
             ),
           ),
-          child: Image.asset(
+          child: ShadImage(
             "assets/icons/$image",
             height: 23,
+            fit: BoxFit.fitHeight,
           ),
         ),
       ),

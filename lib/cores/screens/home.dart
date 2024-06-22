@@ -1,4 +1,5 @@
-import 'package:video_surf/cores/widgets/image_button.dart';
+import 'package:VideoSurf/cores/widgets/image_button.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,9 +14,10 @@ class HomePage extends StatelessWidget {
           children: [
             Row(
               children: [
-                Image.asset(
+                const ShadImage(
                   "assets/images/youtube.jpg",
                   height: 36,
+                  fit: BoxFit.fitHeight,
                 ),
                 const SizedBox(width: 4),
                 const Spacer(),

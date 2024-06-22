@@ -1,4 +1,4 @@
-import 'package:video_surf/cores/widgets/image_item.dart';
+import 'package:VideoSurf/cores/widgets/image_item.dart';
 import 'package:flutter/material.dart';
 
 class Items extends StatelessWidget {

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
+  // init params
   final IconData iconData;
   final VoidCallback onTap;
   final bool haveColor;
+
+  // set params
   const CustomButton({
     Key? key,
     required this.iconData,

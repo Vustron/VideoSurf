@@ -1,3 +1,4 @@
+import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:flutter/material.dart';
 
 class FlatButton extends StatelessWidget {
@@ -20,9 +21,9 @@ class FlatButton extends StatelessWidget {
           Radius.circular(16),
         ),
       ),
-      child: TextButton(
+      child: ShadButton(
         onPressed: onPressed,
-        child: Text(
+        text: Text(
           text,
           style: const TextStyle(
             color: Colors.white,

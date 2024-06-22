@@ -1,4 +1,4 @@
-package com.example.video_surf
+package com.vustron_videosurf.com
 
 import io.flutter.embedding.android.FlutterActivity
 
