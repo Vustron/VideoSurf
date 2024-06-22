@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765676839551",
+    "project_id": "videosurf-4bac5",
+    "storage_bucket": "videosurf-4bac5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765676839551:android:8c9af2970a7b505e39954a",
+        "android_client_info": {
+          "package_name": "com.vustron_videosurf.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_CqdsPoiO0Yo4LYBEkEGPbcQTMjGqmUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
