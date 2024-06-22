@@ -1,11 +1,14 @@
+import 'package:VideoSurf/cores/services/api/auth.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends ConsumerWidget {
   const LoginPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       body: SafeArea(
         child: Center(
@@ -20,7 +23,8 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.only(
+                    left: 20, right: 20, top: 50, bottom: 20),
                 child: RichText(
                   textAlign: TextAlign.center,
                   text: const TextSpan(
@@ -46,7 +50,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                 child: Text(
                   "Your ultimate platform for video streaming and sharing.",
                   style: TextStyle(
@@ -57,14 +61,20 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const Spacer(),
-              const Padding(
-                padding: EdgeInsets.only(bottom: 200),
+              // Adjusted padding to prevent overflow
+              Padding(
+                padding: const EdgeInsets.only(bottom: 160),
                 child: ShadButton.outline(
-                  icon: Icon(
-                    Icons.chevron_right,
-                    size: 16,
+                  onPressed: () async {
+                    await ref.read(authServiceProvider).signInWithGoogle();
+                  },
+                  text: const Text('Sign-In with Google'),
+                  icon: SizedBox(
+                    width: 30,
+                    height: 25,
+                    child: Brand(Brands.google),
                   ),
-                  size: ShadButtonSize.icon,
+                  size: ShadButtonSize.lg,
                 ),
               ),
             ],
